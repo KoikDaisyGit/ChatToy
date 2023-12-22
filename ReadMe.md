@@ -7,10 +7,14 @@
 ChatToy is a fully offline HTML-based dialogue system made for the fun of chatting with fictional characters of one's creation. All dialogue is user-defined, allowing full control over the interactions, with a reasonable amount of potential randomness.
 The user can define verbal, non-verbal, and image/video responses in any combination to create scenes that play out as they desire.
 
+---
+
 ### How to Use ChatToy
 In the lower-right corner, there's a main input box which, when typed into, will search for valid Dialogue options and display them to the user. When an option is tapped, the user's avatar will speak the Message defined in the Dialogue, and then a random Exchange from that Dialogue will be selected and spoken in response.
 
 The user can define these options by tapping the menu icon in the upper-right corner and editing the data.
+
+---
 ### Data Structure
 ##### Messages
 Messages are the basic building blocks of the system. They specify their sender and type. Types include speech, actions, and images. Each Message contains a list of strings or images which are randomly selected between when the Message is sent. 
@@ -31,12 +35,16 @@ Activities determine the context of the conversation. They will define the bot's
 ###### The "Default" Activity
 ChatToy has one immutable activity called "Default." Its name cannot be changed, and any Dialogue options defined within will be available regardless of which Activity is active. Think of it as a container of globally-scoped Dialogues.
 
+---
+
 ### Exporting/Importing App Data
 As a measure for preventing data loss, the user can copy all written app data to their clipboard for preserving elsewhere. It's recommended to save it to a .json file with UTF-8 enabled to preserve emojis. Data can also be imported by pasting it into the Data input and clicking the "Load" button.
 ### Importing Images
 ChatToy allows the user to import images from their device for use with the application. They can create categories and then import images into those categories. These images are identified by file name saved to the browser's database for later use. Images are used for profile pictures, backgrounds, and Message bodies.
 ##### Chat Image Button
 There is an image button in the main chat's lower-left corner which will allow the user to send an image for viewing regardless of context.
+
+---
 ### Using ChatToy on Android devices
 The application can be run locally on Google Chrome for Android by placing its folder in Chrome's download directory: `Android/data/com.android.chrome/files/Download/`
 ###### Set up Dropbox Connection
@@ -61,6 +69,8 @@ Since Chrome doesn't allow users to open files easily, [ShortcutMaker](https://p
 * Disable "Shortcut Fix."
 * Tap "Create Shortcut."
 * You can edit the icon on the home screen to remove the ShortcutMaker badge if you like.
+
+---
 
 ### Extending/Developing ChatToy
 This application was developed using TypeScript and CSS compiled, concatenated, and minimized for lightweight offline use. For those wishing to fork or otherwise further develop ChatToy, you need only open a terminal in the folder and run the following commands:
