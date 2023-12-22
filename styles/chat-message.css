@@ -1,0 +1,136 @@
+ul#chat-main {
+    width: 100%;
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 200px;
+}
+
+.message {
+    width: fit-content;
+    max-width: 90%;
+    height: fit-content;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.speech-bubble {
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.188);
+    color: white;
+    border: none;
+}
+
+.speech-bubble p {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.bubble-image {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    color: white;
+    filter: var(--img-filter);
+}
+
+.pfp {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: brown;
+    border-radius: 1000px;
+    align-self: flex-end;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.658);
+}
+
+.bubbletail {
+    border-radius: 0;
+    border: 20px black solid;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.emoji {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.212);
+}
+
+.action-text {
+    font-weight: bold;
+    font-style: italic;
+    max-width: 66vw;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: var(--color-action-text);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.149);
+}
+
+.speech-bubble-user {
+    position: relative;
+    margin-right: 16px;
+    align-self: center;
+    width: auto;
+    background-color: var(--color-user);
+}
+
+.speech-bubble-neutral {
+    position: relative;
+    margin-right: 16px;
+    align-self: center;
+    width: auto;
+    background-color: var(--color-action-suggestion);
+}
+
+.speech-bubble:hover {
+    filter: brightness(110%);
+}
+
+.speech-bubble:active {
+    filter: brightness(80%);
+}
+
+
+
+.speech-bubble-bot {
+    position: relative;
+    margin-left: 16px;
+    align-self: center;
+    background-color: var(--color-bot);
+}
+
+.message-user {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.message-bot {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.bubbletail-user {
+    border-bottom-color: var(--color-user);
+    right: -15px;
+}
+
+.bubbletail-bot {
+    border-bottom-color: var(--color-bot);
+    left: -15px;
+}

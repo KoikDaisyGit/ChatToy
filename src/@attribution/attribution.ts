@@ -1,0 +1,1 @@
+/*! ChatToy created by KoikDaisy at https://github.com/KoikDaisyGit/ChatToy */

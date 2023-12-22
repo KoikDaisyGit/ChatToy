@@ -1,0 +1,16 @@
+{
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jquery": "^3.5.29",
+        "grunt": "^1.6.1",
+        "grunt-contrib-concat": "^2.1.0",
+        "grunt-contrib-cssmin": "^5.0.0",
+        "grunt-contrib-uglify": "^5.2.2",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-run": "^0.8.1"
+    },
+    "scripts": {
+        "start": "grunt watch:debug",
+        "start:min": "grunt watch"
+    }
+}

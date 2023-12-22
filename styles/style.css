@@ -1,0 +1,126 @@
+:root {
+    --color-user: #0073ff;
+    --color-bot: #ff5e9e;
+    --color-action-text: #8c0202;
+    --color-background: #d9d9d9;
+    --color-action-suggestion: #323f4e;
+    --url-background: url("");
+    --bg-filter: blur(7px);
+    --img-filter: none;
+    /*blur(20px); */
+}
+
+#chat-menu-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    background-image: url("./assets/menu.png");
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-size: contain;
+    opacity: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-background);
+}
+
+#background {
+    background-color: var(--color-background);
+    background-image: var(--url-background);
+    background-size: cover;
+    filter: var(--bg-filter);
+    /* width: 100vw; */
+    /* height: 100vh; */
+    position: fixed;
+    z-index: -100;
+    right: -10px;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    padding: 4px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 12px;
+}
+
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#input-main {
+    width: 169px;
+    height: 15px;
+    min-width: none;
+    background-color: transparent;
+    /* background-color: var(--color-user); */
+    background-image: url('./assets/thought.png');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 16px;
+    color: gray;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+}
+
+#input-main:disabled {
+    display: none;
+}
+
+#suggestions {
+    position: fixed;
+    right: 5px;
+    bottom: 30px;
+    width: 100%;
+}
+
+#input-main::placeholder {
+    color: rgba(0, 0, 0, 0.574);
+    font-weight: bold;
+}
+
+#button-send {
+    position: fixed;
+    bottom: 30px;
+    padding: 16px;
+    background-color: var(--color-user);
+}
+
+.new-bar {
+    position: relative;
+    width: 100%;
+}
+
+.new-bar span {
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    /* transform: translateY(-50%); */
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.new-bar hr {
+    background-color: red;
+    color: red;
+    height: 2px;
+    border: none;
+    margin-top: 24px;
+}
