@@ -4,7 +4,7 @@
 <img alt="01" src="https://github.com/KoikDaisyGit/ChatToy/assets/114887027/bcb67b21-68e9-4b8f-804d-4808ba666d56" width="200" />
 
 ### What is ChatToy?
-ChatToy is a fully offline dialogue system made for the fun of chatting with fictional characters of one's creation. All dialogue is user-defined, allowing full control over the interactions, with a reasonable amount of potential randomness.
+ChatToy is a fully offline HTML-based dialogue system made for the fun of chatting with fictional characters of one's creation. All dialogue is user-defined, allowing full control over the interactions, with a reasonable amount of potential randomness.
 The user can define verbal, non-verbal, and image/video responses in any combination to create scenes that play out as they desire.
 
 ### How to Use ChatToy
