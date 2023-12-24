@@ -47,6 +47,7 @@ There is an image button in the main chat's lower-left corner which will allow t
 ---
 ### Using ChatToy on Android devices
 The application can be run locally on Google Chrome for Android by placing its folder in Chrome's download directory: `Android/data/com.android.chrome/files/Download/`
+
 This can be done by connecting the device to a PC, or through the below method.
 ###### Set up Dropbox Connection
 One way to place your ChatToy folder into Chrome's download directory is to use Dropbox in tandem with [FolderSync](https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.lite&hl=en_US&gl=US) for Android devices.
